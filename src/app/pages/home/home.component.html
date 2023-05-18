@@ -1,0 +1,28 @@
+<main>
+    <section>
+        <p class="title-home">Explore o mundo dos <b class="pokemon">Pokémons</b> </p>
+        <small class="subtitle-home">Descubra todas as espécies de Pokémons</small>
+        <div class="form">
+            <input type="text">
+            <button>Buscar</button>
+        </div>
+    </section>
+    <section class="second-section">
+        <img src="/assets/img-home-1.png" alt="">
+        <img src="/assets/img-home-2.png" alt="">
+        <img src="/assets/img-home-3.png" alt="">
+    </section>
+</main>
+
+<main>
+    <section>
+        <p>Pokedex</p>
+        <div class="cards">
+            <ng-container *ngFor="let pokemon of pokemons">
+                <app-card [pokemon]="pokemon"></app-card>
+            </ng-container>
+        </div>
+        
+        
+    </section>
+</main>
