@@ -18,4 +18,12 @@ export class PokemonListService {
     return this.http.get(url)
   }
 
+  getPokemonDetails(id: number){
+    return this.http.get(`${this.baseUrl}/pokemon/${id}`)
+  }
+
+  getPokemonCharacteristics(id: number){
+    return this.http.get(`${this.baseUrl}/characteristic/${id}`)
+  }
+
 }
