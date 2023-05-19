@@ -16,9 +16,9 @@
 
 <main>
     <section>
-        <p>Pokedex</p>
+        <p class="title-section">Pokedex</p>
         <div class="cards">
-            <ng-container *ngFor="let pokemon of pokemons">
+            <ng-container *ngFor="let pokemon of pokes">
                 <app-card [pokemon]="pokemon"></app-card>
             </ng-container>
         </div>

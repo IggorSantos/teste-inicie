@@ -38,8 +38,17 @@ main{
     width: 160px;
     height: 300px;
 }
+.title-section{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2F3E77;
+}
 .cards{
    display: grid;
    grid-template-columns: 200px 200px 200px 200px 200px;
    grid-column-gap: 10px;
+   grid-row-gap: 10px;
 }
