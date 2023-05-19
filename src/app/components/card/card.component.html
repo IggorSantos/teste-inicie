@@ -1,3 +1,17 @@
 <main class="card">
-    <p>{{this.pokemon.name}}</p>
+    <div class="card-header">
+        <p class="pokemon-name">{{this.pokemon.name}}</p>
+        <p class="pokemon-cod">Cod: #{{this.pokemon.id}}</p>
+    </div>    
+    <img src={{this.pokemon.sprites.front_default}} alt="">
+    <footer>
+        <div class="card-footer">
+            <p class="card-footer-text">Altura:</p>
+            <p class="card-footer-info">{{this.pokemon.height}} cm</p>
+        </div>
+        <div class="card-footer">
+            <p class="card-footer-text">Peso:</p>
+            <p class="card-footer-info">{{this.pokemon.weight}} kg</p>
+        </div>
+    </footer>
 </main>

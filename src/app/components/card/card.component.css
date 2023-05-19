@@ -1,4 +1,53 @@
 .card{
-    /*width: 18rem;*/
-    border: 1px solid #000;
+    /*width: 18rem;
+    border: 1px solid #000;*/
+    padding: 0 2%;
+    background-color: #FFF;
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pokemon-name{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #233674;
+    margin-top: 0;
+}
+.pokemon-cod{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #233674;
+    margin-top: 3%;
+}
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-footer-text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #233674;
+}
+.card-footer-info{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #233674;
 }
