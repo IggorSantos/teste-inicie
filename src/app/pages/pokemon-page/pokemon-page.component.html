@@ -1,0 +1,27 @@
+<main>
+    <section>
+        <p class="pokemon-name">{{this.pokemon.name}}</p>
+        <div class="cod-type">
+            <p class="cod-type-info">Cod: #{{this.pokemon.id}}</p>
+            <p class="cod-type-info">Tipo: {{this.pokemon.types[0].type.name}}</p>
+        </div> 
+        <div class="description">
+            <p class="description-name">Descrição</p>
+            <p class="description-info">{{this.pokemonDescription}}</p>
+        </div> 
+        <div class="info">
+            <p>Informações</p>
+            <div class="info-details">
+                <p>Altura:</p>
+                <p>{{this.pokemon.height}}cm</p>
+            </div>
+            <div class="info-details">
+                <p>Peso:</p>
+                <p>{{this.pokemon.weight}}kg</p>
+            </div>
+        </div>    
+    </section>
+    <section>
+        <img src={{this.pokemon.sprites.front_default}} alt="">
+    </section>
+</main>

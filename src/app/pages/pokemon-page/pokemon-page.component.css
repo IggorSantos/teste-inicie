@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EFF4FA;
+}
+.pokemon-name{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #233674;
+}
+.cod-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cod-type-info{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #233674
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.description-name{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #233674;
+}
+.description-info{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #233674;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info-details{
+    display: flex;
+    flex-direction: row;
+}
