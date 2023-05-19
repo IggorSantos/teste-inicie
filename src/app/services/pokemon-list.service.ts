@@ -14,4 +14,8 @@ export class PokemonListService {
     return this.http.get(`${this.baseUrl}/pokemon`)
   }
 
+  getPokemon(url: string){
+    return this.http.get(url)
+  }
+
 }
