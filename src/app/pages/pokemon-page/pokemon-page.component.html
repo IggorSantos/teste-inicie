@@ -10,18 +10,18 @@
             <p class="description-info">{{this.pokemonDescription}}</p>
         </div> 
         <div class="info">
-            <p>Informações</p>
-            <div class="info-details">
-                <p>Altura:</p>
-                <p>{{this.pokemon.height}}cm</p>
+            <p class="info-title">Informações</p>
+            <div class="info-group">
+                <p class="info-name">Altura:</p>
+                <p class="info-name">{{this.pokemon.height}}cm</p>
             </div>
-            <div class="info-details">
-                <p>Peso:</p>
-                <p>{{this.pokemon.weight}}kg</p>
+            <div class="info-group">
+                <p class="info-name">Peso:</p>
+                <p class="info-name">{{this.pokemon.weight}}kg</p>
             </div>
         </div>    
     </section>
-    <section>
+    <section class="second-section">
         <img src={{this.pokemon.sprites.front_default}} alt="">
     </section>
 </main>
