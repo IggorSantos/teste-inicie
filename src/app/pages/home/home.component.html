@@ -2,10 +2,10 @@
     <section>
         <p class="title-home">Explore o mundo dos <b class="pokemon">Pokémons</b> </p>
         <small class="subtitle-home">Descubra todas as espécies de Pokémons</small>
-        <div class="form">
-            <input type="text">
-            <button>Buscar</button>
-        </div>
+        <form [formGroup]="form" class="form">
+            <input formControlName="term" type="text">
+            <button (click)="searchPokemon()">Buscar</button>
+        </form>
     </section>
     <section class="second-section">
         <img class="img-1" src="/assets/img-home-1.png" alt="">

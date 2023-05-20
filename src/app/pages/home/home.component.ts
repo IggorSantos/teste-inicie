@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormGroup, FormControl } from '@angular/forms';
 import { PokemonListService } from 'src/app/services/pokemon-list.service';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-home',
@@ -7,14 +10,21 @@ import { PokemonListService } from 'src/app/services/pokemon-list.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  form: FormGroup | any = '';
   pokemons: any;
   pokes: Array<any> = [];
 
-  constructor(private service: PokemonListService) { }
+  constructor(private service: PokemonListService, private router: Router) { }
 
   ngOnInit(): void {
+    this.buildForm()
     this.getPokemons()
-    //this.getPokemon()
+  }
+
+  buildForm(){
+    this.form = new FormGroup({
+      term: new FormControl(' ')
+    })
   }
 
   getPokemons(){
@@ -40,6 +50,22 @@ export class HomeComponent implements OnInit {
         console.error(error)
       }
     }) 
+  }
+
+  searchPokemon(){
+    if(this.form.value.term == ' '){
+      console.log("String vazia")
+      Swal.fire({
+        title: 'Erro!',
+        text: 'Digite algum pokemon que queira pesquisar',
+        icon: 'error',
+        timer: 3000,
+        showConfirmButton: false
+      })
+    }else{
+      this.router.navigate(['/search', { search: JSON.stringify(this.form.value.term)}])
+    }
+
   }
 
 }
