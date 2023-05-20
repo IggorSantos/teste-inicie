@@ -1,0 +1,10 @@
+main{
+    padding: 0 5% 25% 5%;
+    background-color: #EFF4FA;
+}
+.card{
+    width: 12rem;    
+}
+.not-found{
+    padding-bottom: 40%;
+}

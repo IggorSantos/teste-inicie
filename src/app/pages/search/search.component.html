@@ -1,0 +1,10 @@
+<main>
+    <section>
+        <ng-container *ngFor="let poke of pokemons">
+            <div class="card">
+                <app-card [pokemon]="poke"></app-card>
+            </div>            
+        </ng-container>
+    </section>
+    <section class="not-found" *ngIf="exists == false"></section>
+</main>
