@@ -78,3 +78,36 @@ main{
 .second-section img{
     width: 50%;
 }
+.bar-div{
+    display: flex;
+    flex-direction: row;    
+}
+.bar-text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #233674;
+}
+#bar_1{
+    background-color: #C4F789;
+    height: 20px;
+    margin-top: 3%;
+
+}
+#bar_2{
+    background-color: #F7802A;
+    height: 20px;
+    margin-top: 3%;
+}
+#bar_3{
+    background-color: #49D0B0;
+    height: 20px;
+    margin-top: 3%;
+}
+#bar_4{
+    background-color: #EA686D;
+    height: 20px;
+    margin-top: 3%;
+}
