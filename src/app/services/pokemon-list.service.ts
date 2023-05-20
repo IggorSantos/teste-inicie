@@ -26,4 +26,9 @@ export class PokemonListService {
     return this.http.get(`${this.baseUrl}/characteristic/${id}`)
   }
 
+  getPokemonByName(name: string){
+    console.log(name)
+    return this.http.get(`${this.baseUrl}/pokemon/${name}`)
+  }
+
 }
