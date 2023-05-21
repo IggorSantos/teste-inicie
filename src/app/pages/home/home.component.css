@@ -59,3 +59,32 @@ button{
    grid-row-gap: 10px;
    margin-left: 15%;
 }
+
+@media(max-width: 750px){
+    main{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        grid-template-columns: 180px 180px 180px;
+    }
+}
+
+@media(max-width: 450px){
+    .second-section img{
+        width: 100px;
+    }    
+    .cards{
+        justify-content: center;
+        grid-template-columns: 200px;
+        margin-left: 0;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    .form input{
+        width: 150px;
+        height: 44px;
+        border: none;
+    }
+}
