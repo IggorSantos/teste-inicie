@@ -1,9 +1,9 @@
 <main>
     <section>
-        <p class="pokemon-name">{{this.pokemon.name}}</p>
+        <p class="pokemon-name">{{this.pokemon?.name}}</p>
         <div class="cod-type">
-            <p class="cod-type-info">Cod: #{{this.pokemon.id}}</p>
-            <p class="cod-type-info">Tipo: {{this.pokemon.types[0].type.name}}</p>
+            <p class="cod-type-info">Cod: #{{this.pokemon?.id}}</p>
+            <p class="cod-type-info">Tipo: {{this.pokemon?.types[0].type.name}}</p>
         </div> 
         <div class="description">
             <p class="description-name">Descrição</p>
@@ -13,11 +13,11 @@
             <p class="info-title">Informações</p>
             <div class="info-group">
                 <p class="info-name">Altura:</p>
-                <p class="info-name">{{this.pokemon.height}}cm</p>
+                <p class="info-name">{{this.pokemon?.height}}cm</p>
             </div>
             <div class="info-group">
                 <p class="info-name">Peso:</p>
-                <p class="info-name">{{this.pokemon.weight}}kg</p>
+                <p class="info-name">{{this.pokemon?.weight}}kg</p>
             </div>
             <div class="chart-bar">
                     <div class="bar-div">
@@ -38,6 +38,6 @@
         </div>    
     </section>
     <section class="second-section">
-        <img src={{this.pokemon.sprites.front_default}} alt="">
+        <img src={{this.pokemon?.sprites.front_default}} alt="">
     </section>
 </main>
