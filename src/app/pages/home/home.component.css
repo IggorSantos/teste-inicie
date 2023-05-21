@@ -60,12 +60,31 @@ button{
    margin-left: 15%;
 }
 
+@media(max-width: 1200px){
+    .cards{
+        grid-template-columns: 160px 160px 160px 160px;
+        margin-left: 5%;
+    }
+}
+
 @media(max-width: 750px){
     main{
         flex-direction: column-reverse;
     }
     .cards{
         grid-template-columns: 180px 180px 180px;
+    }
+}
+
+@media(max-width: 625px){
+    .cards{
+        grid-template-columns: 160px 160px 160px;
+    }
+}
+
+@media(max-width: 550px){
+    .cards{
+        grid-template-columns: 180px 180px;
     }
 }
 
