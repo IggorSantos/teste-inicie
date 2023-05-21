@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonListService } from 'src/app/services/pokemon-list.service';
+import { Pokemon } from 'src/app/models/pokemon.model';
 
 @Component({
   selector: 'app-pokemon-page',
@@ -8,7 +9,7 @@ import { PokemonListService } from 'src/app/services/pokemon-list.service';
   styleUrls: ['./pokemon-page.component.css']
 })
 export class PokemonPageComponent implements OnInit {
-  pokemon: any;
+  pokemon: Pokemon | any;
   idPokemon: number = 0;
   pokemonDescription: string = ' ';
 

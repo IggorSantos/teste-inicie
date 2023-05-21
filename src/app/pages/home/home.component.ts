@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl } from '@angular/forms';
 import { PokemonListService } from 'src/app/services/pokemon-list.service';
+import { Pokemon } from 'src/app/models/pokemon.model';
 import Swal from 'sweetalert2'
 
 @Component({
@@ -12,7 +13,7 @@ import Swal from 'sweetalert2'
 export class HomeComponent implements OnInit {
   form: FormGroup | any = '';
   pokemons: any;
-  pokes: Array<any> = [];
+  pokes: Array<Pokemon> = [];
 
   constructor(private service: PokemonListService, private router: Router) { }
 
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
     this.service.getPokemon(pokemon.url).subscribe({
       next: (res: any)=> {               
         this.pokes.push(res)
+        console.log(this.pokes)
       },
       error: (error: any) => {
         console.error(error)

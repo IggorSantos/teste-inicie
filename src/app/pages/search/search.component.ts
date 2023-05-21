@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonListService } from 'src/app/services/pokemon-list.service';
+import { Pokemon } from 'src/app/models/pokemon.model';
 import Swal from 'sweetalert2'
 
 
@@ -11,7 +12,7 @@ import Swal from 'sweetalert2'
 })
 export class SearchComponent implements OnInit {
   search: string = '';
-  pokemons: Array<any> = [];
+  pokemons: Array<Pokemon> = [];
   exists: boolean = true;
 
   constructor(private activated: ActivatedRoute, private service: PokemonListService ) { }
