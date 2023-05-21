@@ -111,3 +111,9 @@ main{
     height: 20px;
     margin-top: 3%;
 }
+
+@media(max-width: 750px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
