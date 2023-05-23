@@ -3,4 +3,12 @@ nav{
 }
 img{
     cursor: pointer;
+    margin-left: 2%;
+}
+
+@media(max-width: 450px){
+    section{
+        display: flex;
+        justify-content: center;
+    }
 }
