@@ -2,7 +2,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #EFF4FA;
-    padding: 0 5%;
+    padding: 0 2%;
 }
 .pokemon-name{
     font-family: 'Nunito';
