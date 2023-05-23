@@ -2,7 +2,11 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #EFF4FA;
+    background-color: #EFF4FA;    
+}
+.first-main{
+    padding-left: 2%;    
+
 }
 .title-home{
     font-size: 55px;
@@ -51,6 +55,7 @@ button{
     font-size: 30px;
     line-height: 30px;
     color: #2F3E77;
+    margin-left: 2%;
 }
 .cards{
    display: grid;
@@ -59,6 +64,7 @@ button{
    grid-row-gap: 10px;
    margin-left: 15%;
 }
+
 
 @media(max-width: 1200px){
     .cards{

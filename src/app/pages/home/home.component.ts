@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
       error: (error: any) => {
         console.error(error)
       }
-    }) 
+    })  
   }
 
   searchPokemon(){
